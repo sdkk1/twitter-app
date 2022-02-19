@@ -58,7 +58,7 @@ export default function AuthFrom() {
         let url = ''
         if (avatarImage) {
           const fileNameId = authUser.user?.uid ?? ''
-          const fileName = `${fileNameId}_${avatarImage.name}`
+          const fileName = `${fileNameId}_avatar_${avatarImage.name}`
 
           await storage
             .ref(`avatars/${fileName}`)
