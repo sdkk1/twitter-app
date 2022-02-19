@@ -27,7 +27,7 @@ export default function AuthInputField({
   onChangePassword,
 }: Props) {
   return (
-    <form css={styleFrom}>
+    <div css={styleFrom}>
       {!isLogin && (
         <>
           <Box textAlign='center'>
@@ -84,7 +84,7 @@ export default function AuthInputField({
         value={password}
         onChange={onChangePassword}
       />
-    </form>
+    </div>
   )
 }
 
